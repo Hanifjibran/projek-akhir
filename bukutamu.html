@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buku Tamu | Website Pribadi [Nama Kamu]</title>
+</head>
+
+<!-- Warna halaman diatur lewat atribut HTML (bgcolor, text, link), bukan CSS -->
+<body bgcolor="#14161F" text="#F4F2EE" link="#A992F5" vlink="#A992F5" alink="#FFFFFF">
+
+  <!-- ================= WADAH UTAMA (lebar 1100 px, rata tengah) ================= -->
+  <table width="1100" align="center" border="0" cellspacing="0" cellpadding="0">
+
+    <!-- ========== 1. MENU NAVIGASI ========== -->
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#1E2130">
+          <tr>
+            <td width="280" height="64" align="left">
+              <font face="Verdana, Geneva, sans-serif" size="4" color="#F4F2EE">&nbsp;&nbsp;<b>Astraea Lux</b></font>
+            </td>
+            <td width="164" align="center">
+              <font face="Verdana, Geneva, sans-serif" size="2"><a href="index.html"><font color="#C9CCD8"><b>Home</b></font></a></font>
+            </td>
+            <td width="164" align="center">
+              <font face="Verdana, Geneva, sans-serif" size="2"><a href="profil.html"><font color="#C9CCD8"><b>Profil</b></font></a></font>
+            </td>
+            <td width="164" align="center">
+              <font face="Verdana, Geneva, sans-serif" size="2"><a href="gallery.html"><font color="#C9CCD8"><b>Gallery</b></font></a></font>
+            </td>
+            <td width="164" align="center">
+              <font face="Verdana, Geneva, sans-serif" size="2"><a href="artikel.html"><font color="#C9CCD8"><b>Article</b></font></a></font>
+            </td>
+            <!-- Menu aktif (halaman ini) -->
+            <td width="164" align="center" bgcolor="#A992F5">
+              <font face="Verdana, Geneva, sans-serif" size="2" color="#14161F"><b>GuestBook</b></font>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ==========  HEADER / BANNER ========== -->
+    <tr>
+      <td>
+        <img src="assets/header-bukutamu.png" width="1100" height="275" alt="Banner halaman Buku Tamu: Tinggalkan jejakmu">
+      </td>
+    </tr>
+
+    <tr><td height="28"></td></tr>
+
+    <!-- ==========  ISI HALAMAN ========== -->
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr valign="top">
+
+            <!-- Kolom kiri: formulir buku tamu -->
+            <td width="680">
+              <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#3A3F57">
+                <tr>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="28" bgcolor="#1E2130">
+                      <tr>
+                        <td>
+                          <font face="Verdana, Geneva, sans-serif" size="3">
+
+                            <h1>Isi <font color="#A992F5">Buku Tamu</font></h1>
+
+                            <!-- Halaman statis: tombol Kirim hanya memuat ulang halaman ini -->
+                            <form action="bukutamu.html" method="get">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="10">
+
+                                <!-- Nama -->
+                                <tr valign="top">
+                                  <td width="170">
+                                    <label for="nama"><font color="#A992F5"><b>Nama</b></font></label>
+                                  </td>
+                                  <td>
+                                    <input type="text" id="nama" name="nama" size="40" maxlength="60" placeholder="Nama lengkapmu" required>
+                                  </td>
+                                </tr>
+
+                                <!-- Email -->
+                                <tr valign="top">
+                                  <td>
+                                    <label for="email"><font color="#A992F5"><b>Email</b></font></label>
+                                  </td>
+                                  <td>
+                                    <input type="email" id="email" name="email" size="40" maxlength="80" placeholder="nama@contoh.com" required>
+                                  </td>
+                                </tr>
+
+                                <!-- Jenis kelamin (radio button) -->
+                                <tr valign="top">
+                                  <td>
+                                    <font color="#A992F5"><b>Jenis Kelamin</b></font>
+                                  </td>
+                                  <td>
+                                    <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                                    <label for="laki-laki">Laki-laki</label>
+                                    &nbsp;&nbsp;
+                                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                                    <label for="perempuan">Perempuan</label>
+                                  </td>
+                                </tr>
+
+                                <!-- Pesan / kesan -->
+                                <tr valign="top">
+                                  <td>
+                                    <label for="pesan"><font color="#A992F5"><b>Pesan / Kesan</b></font></label>
+                                  </td>
+                                  <td>
+                                    <textarea id="pesan" name="pesan" rows="7" cols="42" placeholder="Tulis pesan atau kesanmu di sini..." required></textarea>
+                                  </td>
+                                </tr>
+
+                                <!-- Tombol -->
+                                <tr>
+                                  <td></td>
+                                  <td>
+                                    <input type="submit" value="Kirim Pesan">
+                                    <input type="reset" value="Reset">
+                                  </td>
+                                </tr>
+
+                              </table>
+                            </form>
+
+                          </font>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <td width="24"></td>
+
+            <!-- Kolom kanan: petunjuk pengisian -->
+            <td width="396">
+              <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#3A3F57">
+                <tr>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="28" bgcolor="#1E2130">
+                      <tr>
+                        <td>
+                          <font face="Verdana, Geneva, sans-serif" size="3">
+                            <h2><font color="#A992F5">Petunjuk Pengisian</font></h2>
+                            <font size="2">
+                              <ol>
+                                <li>Tulis <b>nama</b> dan <b>email</b> yang aktif.<br><br></li>
+                                <li>Pilih <b>jenis kelamin</b>.<br><br></li>
+                                <li>Tulis <b>pesan atau kesan</b> dengan bahasa yang sopan.<br><br></li>
+                                <li>Klik <b>Kirim Pesan</b>, atau <b>Reset</b> untuk mereset kata-katanya.</li>
+                              </ol>
+                            </font>
+                            <p>
+                              <font size="2" color="#C9CCD8"><i>“Setiap pesan punya makna, sekecil apa pun kata-katanya.” ✨ <br> Terima kasih sudah berkunjung ദ്ദി(ᵔᗜᵔ)</i></font>
+                            </p>
+                          </font>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td height="28"></td></tr>
+
+    <!-- ========== 4. FOOTER ========== -->
+    <tr>
+      <td>
+        <hr color="#3A3F57" noshade size="1">
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr valign="middle">
+
+            <!-- Logo left: ganti file assets/logo-kiri.png dengan logomu (persegi, sekitar 192 x 192 px) -->
+            <td width="140" align="left">
+              <table border="0" cellspacing="0" cellpadding="1" bgcolor="#3A3F57">
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" cellpadding="14" bgcolor="#1E2130">
+                      <tr>
+                        <td align="center">
+                          <img src="assets/icon 2.png" width="96" height="96" alt="Logo kiri">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <!-- Tengah: menu footer dan hak cipta -->
+            <td align="center">
+            <font face="Verdana, Geneva, sans-serif" size="2" color="#A9ADBB">
+              <a href="index.html">Home</a> |
+              <a href="profil.html">Profile</a> |
+              <a href="gallery.html">Gallery</a> |
+              <a href="artikel.html">Article</a> |
+              <a href="bukutamu.html">Guest Book</a>
+              <br><br>
+              &copy; 2026 Lux
+            </font>
+            </td>
+
+            <!-- Logo right: ganti file assets/logo-kanan.png dengan logomu (persegi, sekitar 192 x 192 px) -->
+            <td width="140" align="right">
+              <table border="0" cellspacing="0" cellpadding="1" bgcolor="#3A3F57">
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" cellpadding="14" bgcolor="#1E2130">
+                      <tr>
+                        <td align="center">
+                          <img src="assets/icon 1.jpeg" width="96" height="96" alt="Logo kanan">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+          </tr>
+        </table>
+        <br><br>
+      </td>
+    </tr>
+
+  </table>
+
+</body>
+
+</html>
